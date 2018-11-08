@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <title>Frog Racing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="col-12 text-right">
+    <p>Account Balance : <span id='balance'>...</span></p> <!-- 31. this is linked to -->
+  </div>
+  <form onsubmit="app.controllers.raceController.addFrog()"></form>
+  <!-- 13. Connect the controller. addFrog function
+  doesn't exist yet, but it will. -->
+  <input type="text" name="name" required><!-- 14. We know we'll need this, but we will come back to it -->
+  <input type="text" name="imgS" required>
+
+
+  <button type="submit"> Add Frog</button> <!-- 15. -->
+
+  <div id="frog"></div> <!-- 16. -->
+
+
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
